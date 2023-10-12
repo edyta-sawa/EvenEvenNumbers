@@ -1,14 +1,11 @@
 import java.util.Scanner;
 
-public class Main {
+public class EvenNumbers {
     public static void main(String[] args) {
-        int evenVal = 2;
         Scanner userInput = new Scanner(System.in);
         System.out.println("Enter last value:");
         int userVal = userInput.nextInt();
-        do {
+        for (int evenVal = 2; evenVal <= userVal; evenVal += 2)
             System.out.println(evenVal);
-            evenVal += 2;
-        } while (evenVal <= userVal);
     }
 }
